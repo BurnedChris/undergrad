@@ -1,5 +1,5 @@
 # Undergrad - A Theme For students
-![screenshot](screenshot.PNG "screenshot")
+![screenshot](screenshot.png "screenshot")
 ##Live Demo
 [Live Demo](http://undergrad.burnsy.me/).
 ## Description
