@@ -20,7 +20,7 @@
 								<?php if( get_theme_mod( 'show_footer_text' ) == '1' ){echo get_theme_mod( 'footer_text_textbox', 'No footer text added as yet.' );}?>
 								<?php if( get_theme_mod( 'show_footer_project_text' ) == '1' ){ ?>
 							<span class="sep"> | </span>
-							<?php printf( esc_html__( 'Find %1$s on Github!', 'Undergrad' ), '<a href="http://burnsy.me" rel="github">Undergrad</a>'); ?>
+							<?php printf( esc_html__( 'Find %1$s on Github!', 'Undergrad' ), '<a href="https://github.com/Burnsyy/undergrad" rel="github">Undergrad</a>'); ?>
 						<?php } ?>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
