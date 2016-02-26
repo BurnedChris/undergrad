@@ -1,4 +1,4 @@
-# Undergrad - A Theme For students
+# Undergrad - A Theme For students [BETA]
 ![screenshot](screenshot.png "screenshot")
 ##Live Demo
 [Live Demo](http://undergrad.burnsy.me/).
@@ -17,7 +17,12 @@ This theme was created for students who could cannot afford a professional theme
 10. Hover over appearance click Themes
 11. Activate Undergrad
 12. Open Customise and Edit Away!
-
+## Upcoming Features
+1. Dark mode!
+2. Custom Widgets
+3. More Customization Options
+4. Finishing of Portfolio
+5. Think of More Ideas
 ## Frequently Asked Questions
 ##### Does this theme support any plugins?
 Undergrad includes support for Infinite Scroll in Jetpack.
