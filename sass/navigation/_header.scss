@@ -1,0 +1,96 @@
+.site-header {
+  background-color: #000;
+  background-size : cover;
+}
+@media screen and (min-width: 50em) {
+  .site-header {
+    min-height: 3.5em;
+  }
+}
+.site-logo {
+  position: relative;
+}
+.site-logo a {
+  position       : absolute;
+  z-index        : 10;
+  top            : 1em;
+  left           : 1em;
+  display        : block;
+  width          : 2em;
+  height         : 2em;
+  background     : black;
+  border         : 2px solid white;
+  color          : white;
+  text-decoration: none;
+}
+.site-logo a:hover,
+.site-logo a:focus {
+  outline: 2px solid white;
+}
+.site-firstletter {
+  font-family: 'Fira Sans', sans-serif;
+  font-size  : 1.5em;
+  font-weight: 700;
+  text-align : center;
+  line-height: 1.3em;
+}
+.site-logo a:hover .site-firstletter,
+.site-logo a:focus .site-firstletter {
+  background: white;
+  color     : black;
+}
+.site-branding {
+  text-align: center;
+  .navbar-compact {
+    text-decoration: none;
+    h1 {
+      font-size      : 26px;
+      color          : #fff;
+      font-weight: 400;
+      .site-description {
+        margin-left   : 15px;
+        display       : inline-block;
+        font-size     : 15px;
+        vertical-align: middle;
+        opacity       : 0.7;
+        margin        : 0;
+      }
+    }
+  }
+}
+.site-title {
+  margin        : 1.7em 1em 0;
+  font-family   : 'Fira Sans', sans-serif;
+  font-size     : 2.4em;
+  font-weight   : bold;
+  line-height   : 1.3em;
+  color         : #fff;
+  text-transform: uppercase;
+  word-break    : break-word;
+}
+@media screen and (max-width: 30em) {
+  .site-title {
+    font-size: 2em;
+  }
+}
+.site-title a {
+  text-decoration: none;
+  color          : inherit;
+}
+.site-title a:hover,
+.site-title a:focus {
+  text-decoration: underline;
+}
+.site-title::after {
+  display      : block;
+  content      : "";
+  margin       : 0.7em auto 0;
+  width        : 3em;
+  border-bottom: solid 1px #fff;
+  opacity      : 0.5;
+}
+.site-description {
+  margin   : 2em 2em 3em;
+  font-size: 110%;
+  color    : #fff;
+}

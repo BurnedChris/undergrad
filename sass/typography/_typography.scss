@@ -1,0 +1,36 @@
+body,
+button,
+input,
+select,
+textarea {
+	color: #000;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+@import "headings";
+
+@import "copy";
+
+@import "custom-fonts";
+
+/*!
+ *  Material Design Iconic Font by Sergey Kupletsky ($zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/
+ *  License - http://zavoloklom.github.io/material-design-iconic-font/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import 'fonts/variables';
+@import 'fonts/path';
+@import 'fonts/core';
+@import 'fonts/sizes';
+@import 'fonts/fixed-width';
+@import 'fonts/list';
+@import 'fonts/border';
+@import 'fonts/pulled';
+@import 'fonts/spinned';
+@import 'fonts/rotated';
+@import 'fonts/stacked';
+@import 'fonts/icons';
+@import 'fonts/aliases';

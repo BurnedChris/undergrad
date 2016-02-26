@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+## Other Navigation
+--------------------------------------------------------------*/
+.comment-navigation,
+.post-navigation,
+.paging-navigation {
+  padding    : 2em 0;
+  font-family: "Fira Sans", sans-serif;
+  text-align : left;
+  overflow   : hidden;
+}
+@media screen and (min-width: 50em) {
+  .comment-navigation,
+  .post-navigation,
+  .paging-navigation {
+    padding: 2em 3em;
+  }
+}
+.nav-links {
+  max-width: 45em;
+  margin   : 0 auto;
+  padding  : 0 0.4em;
+}
+.comment-navigation a,
+.post-navigation a,
+.paging-navigation a {
+  display        : block;
+  width          : 100%;
+  text-decoration: none;
+  padding        : 1em;
+  border         : 1px solid #c3c3c3;
+}
+.comment-navigation a {
+  &:hover,
+  &:focus {
+    border-color: #000;
+  }
+}
+.post-navigation a {
+  &:hover,
+  &:focus {
+    border-color: #000;
+  }
+}
+.paging-navigation a {
+  &:hover,
+  &:focus {
+    border-color: #000;
+  }
+}
+.post-navigation {
+  .post-title {
+    font-size  : 1.2em;
+    font-weight: 700;
+  }
+  a {
+    &:hover .post-title,
+    &:focus .post-title {
+      text-decoration: underline;
+    }
+  }
+}
+.nav-previous {
+  padding-bottom: 1em;
+}
+@media screen and (min-width: 30em) {
+  .nav-links {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : stretch;
+    padding        : 0;
+  }
+  .comment-navigation .nav-previous,
+  .post-navigation .nav-previous {
+    display    : flex;
+    align-items: stretch;
+    float      : left;
+    width      : 48%;
+  }
+  .nav-previous {
+    padding-bottom: 0;
+  }
+  .comment-navigation .nav-next,
+  .post-navigation .nav-next {
+    display    : flex;
+    align-items: stretch;
+    float      : right;
+    text-align : right;
+    width      : 48%;
+  }
+}
+.post-navigation .meta-nav {
+  display: block;
+}
+@media screen and (min-width: 30em) {
+  .post-navigation .meta-nav {
+    padding-bottom: 1em;
+  }
+}
+.paging-navigation {
+  margin-top: -2em;
+  text-align: center;
+  ul {
+    display        : inline-block;
+    margin         : 0;
+    padding        : 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    a {
+      padding: 0.3em 1.4em;
+    }
+  }
+  .current {
+    padding    : 0.8em 1.1em;
+    font-weight: 700;
+  }
+}
