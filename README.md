@@ -5,17 +5,18 @@
 ## Description
 This theme was created for students who could cannot afford a professional theme for Word Press, so with the effort of students to create the theme. It has the possibility to add to your portfolio if you commit to the project!
 ## Installation
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Download WP-SCSS from By Connect Think.
-4. Click Activate Plugin
-5. Hover over settings and click WP-SCSS
-6. Set SCSS location to "/scss/"
-7. Set CSS location to "/"
-8. Set Compiling Mode to compressed
-9. Hover over appearance click Themes
-10. Activate Undergrad
-11. Open Customise and Edit Away!
+1. Download the theme by clicking [here](https://github.com/Burnsyy/undergrad/raw/master/undergrad.zip).
+2. In your admin panel, go to Appearance > Themes and click the Add New button.
+3. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+4. Download WP-SCSS from By Connect Think.
+5. Click Activate Plugin
+6. Hover over settings and click WP-SCSS
+7. Set SCSS location to "/scss/"
+8. Set CSS location to "/"
+9. Set Compiling Mode to compressed
+10. Hover over appearance click Themes
+11. Activate Undergrad
+12. Open Customise and Edit Away!
 
 ## Frequently Asked Questions
 ##### Does this theme support any plugins?
