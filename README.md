@@ -25,7 +25,7 @@ Yes! Help make Undergrad better for other students by helping make the theme big
 ##### I noticed a error what do I do?
 Open a issue on https://github.com/Burnsyy/Undergrad/issues
 ## Changelog
-##### 1.0 - May 12 2015
+##### 1.0 - 26/02/2016
 * Initial release
 
 ## Credits
