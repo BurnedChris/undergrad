@@ -17,6 +17,7 @@ This theme was created for students who could cannot afford a professional theme
 10. Hover over appearance click Themes
 11. Activate Undergrad
 12. Open Customise and Edit Away!
+
 ## Upcoming Features
 1. Dark mode!
 2. Custom Widgets
