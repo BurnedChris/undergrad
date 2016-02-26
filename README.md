@@ -39,3 +39,5 @@ Open a issue on https://github.com/Burnsyy/Undergrad/issues
 ## Credits
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Material Design Iconic Font http://zavoloklom.github.io/material-design-iconic-font/, Created by Sergey Kupletsky, [CC4](http://creativecommons.org/licenses/by-sa/4.0/)
+* SASS http://sass-lang.com/
