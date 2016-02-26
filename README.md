@@ -24,6 +24,7 @@ This theme was created for students who could cannot afford a professional theme
 3. More Customization Options
 4. Finishing of Portfolio
 5. Think of More Ideas
+
 ## Frequently Asked Questions
 ##### Does this theme support any plugins?
 Undergrad includes support for Infinite Scroll in Jetpack.
