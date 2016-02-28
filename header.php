@@ -43,24 +43,26 @@
 					</a>
 				</div>
 				<div class="site-branding<?php if ( is_singular() ) { echo ' screen-reader-text'; } ?>">
-					<?php $description = get_bloginfo( 'description', 'display' ); if( get_theme_mod( 'compacted-header' ) == '0' ){ ?>
+					<?php $description = get_bloginfo( 'description', 'display' ); if( get_theme_mod( 'compacted-header' ) == '1' ){ ?>
+
 						<?php if ( is_front_page() && is_home() ){ ?>
-									<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-								<?php }else{ ?>
-									<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-								<?php }; if ( $description || is_customize_preview() ){ ?>
-									<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-									<?php }; ?>
+							<a class="navbar-compact" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?><?php if ( $description || is_customize_preview() ){ ?>
+							<small class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></small></h1></a>
+							<?php }; ?>
 						<?php }else{ ?>
+							<a class="navbar-compact" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><p><?php bloginfo( 'name' ); ?><?php if ( $description || is_customize_preview() ){ ?>
+							<small class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></small></p></a>
+								<?php }; ?>
+							<?php }; ?>
+						<?php }else{ ?>
+
 							<?php if ( is_front_page() && is_home() ){ ?>
-								<a class="navbar-compact" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?><?php if ( $description || is_customize_preview() ){ ?>
-								<small class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></small></h1></a>
-								<?php }; ?>
-							<?php }else{ ?>
-								<a class="navbar-compact" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><p><?php bloginfo( 'name' ); ?><?php if ( $description || is_customize_preview() ){ ?>
-								<small class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></small></p></a>
-									<?php }; ?>
-								<?php }; ?>
+										<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+									<?php }else{ ?>
+										<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+									<?php }; if ( $description || is_customize_preview() ){ ?>
+										<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+										<?php }; ?>
 						<?php } ?>
 				</div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
