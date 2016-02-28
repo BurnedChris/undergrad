@@ -32,7 +32,8 @@ Extended options available from the Customizer:
 10. Footer: Custom text
 11. Footer: Display Link to the project.
 12. Featured Images
-more to come.
+
+more to come. 
 
 ## Upcoming Features
 1. Dark mode!
