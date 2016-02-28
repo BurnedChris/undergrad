@@ -20,10 +20,11 @@ This theme was created for students who could cannot afford a professional theme
 
 ## Customizer Options
 Extended options available from the Customizer:
+
 1. Site Icon displays as logo in top-right corner
-2. Header background colour
-3. Header text colour
-4. Footer Colour
+2. Header background colour.
+3. Header text colour.
+4. Footer Colour.
 5. Background Colour
 6. Optional Header image
 7. Sidebar position: no sidebar (default), left, or right.
@@ -33,7 +34,7 @@ Extended options available from the Customizer:
 11. Footer: Display Link to the project.
 12. Featured Images
 
-more to come. 
+more to come.
 
 ## Upcoming Features
 1. Dark mode!
