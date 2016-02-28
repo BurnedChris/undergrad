@@ -23,7 +23,7 @@ This theme was created for students who could cannot afford a professional theme
 2. Custom Widgets
 3. More Customization Options
 4. Finishing of Portfolio
-5. Think of More Ideas
+5. Optimizations!
 
 ## Frequently Asked Questions
 ##### Does this theme support any plugins?
@@ -41,3 +41,4 @@ Open a issue on https://github.com/Burnsyy/Undergrad/issues
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Material Design Iconic Font http://zavoloklom.github.io/material-design-iconic-font/, Created by Sergey Kupletsky, [CC4](http://creativecommons.org/licenses/by-sa/4.0/)
 * SASS http://sass-lang.com/
+* Tutorial by Morten Rand-Hendriksen https://github.com/mor10/popperscores/, (C) 2016 Morten Rand-Hendriksen, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
