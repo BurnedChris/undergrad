@@ -18,6 +18,22 @@ This theme was created for students who could cannot afford a professional theme
 11. Activate Undergrad
 12. Open Customise and Edit Away!
 
+## Customizer Options
+Extended options available from the Customizer:
+1. Site Icon displays as logo in top-right corner
+2. Header background colour
+3. Header text colour
+4. Footer Colour
+5. Background Colour
+6. Optional Header image
+7. Sidebar position: no sidebar (default), left, or right.
+8. Width: Fixed or fluid;
+9. Footer: Display Proudly powered by WordPress
+10. Footer: Custom text
+11. Footer: Display Link to the project.
+12. Featured Images
+more to come.
+
 ## Upcoming Features
 1. Dark mode!
 2. Custom Widgets
@@ -26,12 +42,16 @@ This theme was created for students who could cannot afford a professional theme
 5. Optimizations!
 
 ## Frequently Asked Questions
+##### This looks like popperscores
+Yes, This was built off the same course on lynda.com! It has been released more of a learning experience. Not to just copy his work.
+Morten Rand-Hendriksen has a great course if you want to see how to develop the base theme from scratch [here](http://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/417653-2.html)
 ##### Does this theme support any plugins?
 Undergrad includes support for Infinite Scroll in Jetpack.
 ##### Can I edit the theme?
 Yes! Help make Undergrad better for other students by helping make the theme bigger and better.
 ##### I noticed a error what do I do?
 Open a issue on https://github.com/Burnsyy/Undergrad/issues
+
 ## Changelog
 ##### 1.0 - 26/02/2016
 * Initial release
