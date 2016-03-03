@@ -176,392 +176,373 @@
   .widget {
     .social-widget {
       margin: -1em;
-      li {
+      a {
         display   : inline-block;
         text-align: center;
-        a {
-          &,
-          &:visited {
-            color: #fff;
-          }
+        &,
+        &:visited {
+          color: #fff;
         }
       }
-      &.twoEM {
-        li {
-          width : 2em;
-          height: 2em;
-          margin: .6933em;
-          a {
-            font-size: 1em;
-          }
-        }
-        &.rounded li {
+      &.twoEM a div {
+          width    : 2em;
+          height   : 2em;
+          margin   : .6933em;
+          font-size: 1em;
+        &.rounded a div {
           -webkit-border-radius: .5em;
           -moz-border-radius   : .5em;
           border-radius        : .5em;
         }
       }
-      &.threeEM li {
-        width : 3em;
-        height: 3em;
-        margin: .1568em;
-        a {
-          font-size: 2em;
-          i {
-            margin-top: .1em;
-          }
+      &.threeEM a div {
+        width    : 3em;
+        height   : 3em;
+        margin   : .1568em;
+        font-size: 2em;
+        i {
+          margin-top: .1em;
         }
       }
-      &.fourEM li {
+      &.fourEM a div {
         width : 4em;
         height: 4em;
         margin: .2568em;
-        a {
           font-size: 3em;
           i {
             margin-top: .075em;
-          }
         }
       }
-      &.circle li {
+      &.circle a {
         -webkit-border-radius: 100%;
         -moz-border-radius   : 100%;
         border-radius        : 100%;
       }
-      &.rounded li {
+      &.rounded a {
         -webkit-border-radius: 1em;
         -moz-border-radius   : 1em;
         border-radius        : 1em;
       }
-      &.square li {
+      &.square a {
         -webkit-border-radius: 0;
         -moz-border-radius   : 0;
         border-radius        : 0;
       }
-      &.background_fill {
-        li {
-          &.facebook {
-            background: $facebook;
-          }
-          &.twitter {
-            background: $twitter;
-          }
-          &.vk {
-            background: $vk;
-          }
-          &.youtube {
-            background: $youtube;
-          }
-          &.linkedin {
-            background: $linkedin;
-          }
-          &.googleplus {
-            background: $googleplus;
-          }
-          &.skype {
-            background: $skype;
-          }
-          &.reddit {
-            background: $reddit;
-          }
-          &.instagram {
-            background: $instagram;
-          }
-          &.pinterest {
-            background: $pinterest;
-          }
-          &.tumblr {
-            background: $tumblr;
-          }
-          &.disqus {
-            background: $disqus;
-          }
-          &.github {
-            background: $github;
-          }
-          &.codepen {
-            background: $codepen;
-          }
-          &.stackoverflow {
-            background: $stackoverflow;
-          }
-          &.dribbble {
-            background: $dribbble;
-          }
-          &.behance {
-            background: $behance;
-          }
-          &.fivehundredpx {
-            background: $fivehundredpx;
-          }
-          &.flickr {
-            background: $flickr;
-          }
-          &.twitch {
-            background: $twitch;
-          }
-          &.vimeo {
-            background: $vimeo;
-          }
-          &.soundcloud {
-            background: $soundcloud;
-          }
-          &.lastfm {
-            background: $lastfm;
-          }
-          &.steam {
-            background: $steam;
-          }
-          &.xbox {
-            background: $xbox;
-          }
-          &.playstation {
-            background: $playstation;
-          }
+      &.background_fill a {
+        .facebook {
+          background: $facebook;
+        }
+        .twitter {
+          background: $twitter;
+        }
+        .vk {
+          background: $vk;
+        }
+        .youtube {
+          background: $youtube;
+        }
+        .linkedin {
+          background: $linkedin;
+        }
+        .googleplus {
+          background: $googleplus;
+        }
+        .skype {
+          background: $skype;
+        }
+        .reddit {
+          background: $reddit;
+        }
+        .instagram {
+          background: $instagram;
+        }
+        .pinterest {
+          background: $pinterest;
+        }
+        .tumblr {
+          background: $tumblr;
+        }
+        .disqus {
+          background: $disqus;
+        }
+        .github {
+          background: $github;
+        }
+        .codepen {
+          background: $codepen;
+        }
+        .stackoverflow {
+          background: $stackoverflow;
+        }
+        .dribbble {
+          background: $dribbble;
+        }
+        .behance {
+          background: $behance;
+        }
+        .fivehundredpx {
+          background: $fivehundredpx;
+        }
+        .flickr {
+          background: $flickr;
+        }
+        .twitch {
+          background: $twitch;
+        }
+        .vimeo {
+          background: $vimeo;
+        }
+        .soundcloud {
+          background: $soundcloud;
+        }
+        .lastfm {
+          background: $lastfm;
+        }
+        .steam {
+          background: $steam;
+        }
+        .xbox {
+          background: $xbox;
+        }
+        .playstation {
+          background: $playstation;
         }
       }
-      &.icon_color {
-        li {
-          &.facebook a {
+      &.icon_color a {
+          .facebook i {
             color: $facebook;
           }
-          &.twitter a {
+          .twitter i {
             color: $twitter;
           }
-          &.vk a {
+          .vk i {
             color: $vk;
           }
-          &.youtube a {
+          .youtube i {
             color: $youtube;
           }
-          &.linkedin a {
+          .linkedin i {
             color: $linkedin;
           }
-          &.googleplus a {
+          .googleplus i {
             color: $googleplus;
           }
-          &.skype a {
+          .skype i {
             color: $skype;
           }
-          &.reddit a {
+          .reddit i {
             color: $reddit;
           }
-          &.instagram a {
+          .instagram i {
             color: $instagram;
           }
-          &.pinterest a {
+          .pinterest i {
             color: $pinterest;
           }
-          &.tumblr a {
+          .tumblr i {
             color: $tumblr;
           }
-          &.disqus a {
+          .disqus i {
             color: $disqus;
           }
-          &.github a {
+          .github i {
             color: $github;
           }
-          &.codepen a {
+          .codepen i {
             color: $codepen;
           }
-          &.stackoverflow a {
+          .stackoverflow i {
             color: $stackoverflow;
           }
-          &.dribbble a {
+          .dribbble i {
             color: $dribbble;
           }
-          &.behance a {
+          .behance i {
             color: $behance;
           }
-          &.fivehundredpx a {
+          .fivehundredpx i {
             color: $fivehundredpx;
           }
-          &.flickr a {
+          .flickr i {
             color: $flickr;
           }
-          &.twitch a {
+          .twitch i {
             color: $twitch;
           }
-          &.vimeo a {
+          .vimeo i {
             color: $vimeo;
           }
-          &.soundcloud a {
+          .soundcloud i {
             color: $soundcloud;
           }
-          &.lastfm a {
+          .lastfm i {
             color: $lastfm;
           }
-          &.steam a {
+          .steam i {
             color: $steam;
           }
-          &.xbox a {
+          .xbox i {
             color: $xbox;
           }
-          &.playstation a {
+          .playstation a {
             color: $playstation;
           }
         }
-      }
-      &.icon_color_border {
-        li {
-          a i {
-            margin-top: .23333em;
+      &.icon_color_border a {
+        .facebook {
+          border: $facebook solid .2em;
+          & i {
+            color: $facebook;
           }
-          &.facebook {
-            border: $facebook solid .2em;
-            & a {
-              color: $facebook;
-            }
+        }
+        .twitter {
+          border: $twitter solid .2em;
+          & i {
+            color: $twitter;
           }
-          &.twitter {
-            border: $twitter solid .2em;
-            & a {
-              color: $twitter;
-            }
+        }
+        .vk {
+          border: $vk solid .2em;
+          & i {
+            color: $vk;
           }
-          &.vk {
-            border: $vk solid .2em;
-            & a {
-              color: $vk;
-            }
+        }
+        .youtube {
+          border: $youtube solid .2em;
+          & i {
+            color: $youtube;
           }
-          &.youtube {
-            border: $youtube solid .2em;
-            & a {
-              color: $youtube;
-            }
+        }
+        .linkedin {
+          border: $linkedin solid .2em;
+          & i {
+            color: $linkedin;
           }
-          &.linkedin {
-            border: $linkedin solid .2em;
-            & a {
-              color: $linkedin;
-            }
+        }
+        .googleplus {
+          border: $googleplus solid .2em;
+          & i {
+            color: $googleplus;
           }
-          &.googleplus {
-            border: $googleplus solid .2em;
-            & a {
-              color: $googleplus;
-            }
+        }
+        .skype {
+          border: $skype solid .2em;
+          & i {
+            color: $skype;
           }
-          &.skype {
-            border: $skype solid .2em;
-            & a {
-              color: $skype;
-            }
+        }
+        .reddit {
+          border: $reddit solid .2em;
+          & i {
+            color: $reddit;
           }
-          &.reddit {
-            border: $reddit solid .2em;
-            & a {
-              color: $reddit;
-            }
+        }
+        .instagram {
+          border: $instagram solid .2em;
+          & i {
+            color: $instagram;
           }
-          &.instagram {
-            border: $instagram solid .2em;
-            & a {
-              color: $instagram;
-            }
+        }
+        .pinterest {
+          border: $pinterest solid .2em;
+          & i {
+            color: $pinterest;
           }
-          &.pinterest {
-            border: $pinterest solid .2em;
-            & a {
-              color: $pinterest;
-            }
+        }
+        .tumblr {
+          border: $tumblr solid .2em;
+          & i {
+            color: $tumblr;
           }
-          &.tumblr {
-            border: $tumblr solid .2em;
-            & a {
-              color: $tumblr;
-            }
+        }
+        .disqus {
+          border: $disqus solid .2em;
+          & i {
+            color: $disqus;
           }
-          &.disqus {
-            border: $disqus solid .2em;
-            & a {
-              color: $disqus;
-            }
+        }
+        .github {
+          border: $github solid .2em;
+          & i {
+            color: $github;
           }
-          &.github {
-            border: $github solid .2em;
-            & a {
-              color: $github;
-            }
+        }
+        .codepen {
+          border: $codepen solid .2em;
+          & i {
+            color: $codepen;
           }
-          &.codepen {
-            border: $codepen solid .2em;
-            & a {
-              color: $codepen;
-            }
+        }
+        .stackoverflow {
+          border: $stackoverflow solid .2em;
+          & i {
+            color: $stackoverflow;
           }
-          &.stackoverflow {
-            border: $stackoverflow solid .2em;
-            & a {
-              color: $stackoverflow;
-            }
+        }
+        .dribbble {
+          border: $dribbble solid .2em;
+          & i {
+            color: $dribbble;
           }
-          &.dribbble {
-            border: $dribbble solid .2em;
-            & a {
-              color: $dribbble;
-            }
+        }
+        .behance {
+          border: $behance solid .2em;
+          & i {
+            color: $behance;
           }
-          &.behance {
-            border: $behance solid .2em;
-            & a {
-              color: $behance;
-            }
+        }
+        .fivehundredpx {
+          border: $fivehundredpx solid .2em;
+          & i {
+            color: $fivehundredpx;
           }
-          &.fivehundredpx {
-            border: $fivehundredpx solid .2em;
-            & a {
-              color: $fivehundredpx;
-            }
+        }
+        .flickr {
+          border: $flickr solid .2em;
+          & i {
+            color: $flickr;
           }
-          &.flickr {
-            border: $flickr solid .2em;
-            & a {
-              color: $flickr;
-            }
+        }
+        .twitch {
+          border: $twitch solid .2em;
+          & i {
+            color: $twitch;
           }
-          &.twitch {
-            border: $twitch solid .2em;
-            & a {
-              color: $twitch;
-            }
+        }
+        .vimeo {
+          border: $vimeo solid .2em;
+          & i {
+            color: $vimeo;
           }
-          &.vimeo {
-            border: $vimeo solid .2em;
-            & a {
-              color: $vimeo;
-            }
+        }
+        .soundcloud {
+          border: $soundcloud solid .2em;
+          & i {
+            color: $soundcloud;
           }
-          &.soundcloud {
-            border: $soundcloud solid .2em;
-            & a {
-              color: $soundcloud;
-            }
+        }
+        .lastfm {
+          border: $lastfm solid .2em;
+          & i {
+            color: $lastfm;
           }
-          &.lastfm {
-            border: $lastfm solid .2em;
-            & a {
-              color: $lastfm;
-            }
+        }
+        .steam {
+          border: $steam solid .2em;
+          & i {
+            color: $steam;
           }
-          &.steam {
-            border: $steam solid .2em;
-            & a {
-              color: $steam;
-            }
+        }
+        .xbox {
+          border: $xbox solid .2em;
+          & i {
+            color: $xbox;
           }
-          &.xbox {
-            border: $xbox solid .2em;
-            & a {
-              color: $xbox;
-            }
-          }
-          &.playstation {
-            border: $playstation solid .2em;
-            & a {
-              color: $playstation;
-            }
+        }
+        .playstation {
+          border: $playstation solid .2em;
+          & i {
+            color: $playstation;
           }
         }
       }

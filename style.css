@@ -60,10 +60,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-/*!
- *  Material Design Iconic Font by Sergey Kupletsky ($zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/
- *  License - http://zavoloklom.github.io/material-design-iconic-font/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
 /* fira-sans-regular - latin */
 /* Material Design Iconic Font uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -6207,41 +6203,36 @@ a:hover, a:active {
   clear: both;
 }
 #secondary {
-  position: relative;
-  padding: 1.8em 1.4em 0;
+  position        : relative;
+  padding         : 1.8em 1.4em 0;
   background-color: #ededed;
-}
-.widget {
-  margin: 0 0 1.5em;
-  padding: 1.8em;
-  background: #fff;
-}
-.widget select {
-  max-width: 100%;
 }
 @media screen and (min-width: 45em) {
   #secondary {
-    display: flex;
-    flex-wrap: wrap;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: center;
-    padding: 1.8em;
+    padding        : 1.8em;
   }
   .widget {
-    float: left;
-    width: 300px;
+    float : left;
+    width : 300px;
     margin: 0 0.9em 1.8em;
   }
 }
 .widget-title {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  font-size: 1em;
+  margin-top    : 0.5em;
+  margin-bottom : 0.5em;
+  font-size     : 1em;
   text-transform: uppercase;
 }
+.widget-title.two-em {
+  font-size: 2em;
+}
 .widget ul, .widget ol {
-  padding: 0.7em 0 0;
-  margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  padding        : 0.7em 0 0;
+  margin         : 0;
+  font-family    : "Fira Sans", sans-serif;
   list-style-type: none;
 }
 .site-content .widget li {
@@ -6255,15 +6246,15 @@ a:hover, a:active {
   padding-bottom: 0.35em;
 }
 .widget a {
-  font-weight: 700;
+  font-weight    : 700;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size      : 0.9em;
 }
 .widget a:hover, .widget a:focus {
   text-decoration: underline;
 }
 .widget select {
-  width: 100%;
+  width  : 100%;
   padding: 0.5em;
 }
 @media screen and (min-width: 30em) {
@@ -6276,7 +6267,7 @@ a:hover, a:active {
   color: #808080;
 }
 .widget_categories .children {
-  padding-top: 0;
+  padding-top   : 0;
   padding-bottom: 0.5em;
   /* Search widget. */
 }
@@ -6285,12 +6276,12 @@ a:hover, a:active {
   /* Pages and Menu widgets */
 }
 .widget_pages .children, .widget_nav_menu .sub-menu {
-  padding-top: 0;
+  padding-top   : 0;
   padding-bottom: 0.5em;
 }
 .widget_pages a, .widget_nav_menu a {
-  display: block;
-  padding: 1em 0;
+  display      : block;
+  padding      : 1em 0;
   border-bottom: 1px solid #c3c3c3;
 }
 .site-content {
@@ -6311,25 +6302,25 @@ a:hover, a:active {
 }
 .widget li a.rsswidget {
   padding-right: 0.5em;
-  font-size: 1em;
-  line-height: 1.4em;
+  font-size    : 1em;
+  line-height  : 1.4em;
 }
 .rss-date, .widget_rss cite {
-  color: #333;
+  color    : #333;
   font-size: 0.8em;
 }
 .rssSummary {
-  padding: 0.5em 0;
+  padding    : 0.5em 0;
   font-family: "Merriweather", serif;
-  font-size: 0.8em;
+  font-size  : 0.8em;
   line-height: 1.4em;
   /* Search widget */
 }
 .widget_search input[type="search"] {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.5em 1em;
-  border: 1px solid #c3c3c3;
+  box-sizing   : border-box;
+  width        : 100%;
+  padding      : 0.5em 1em;
+  border       : 1px solid #c3c3c3;
   border-radius: 0;
   /* Calendar widget */
 }
@@ -6338,24 +6329,24 @@ a:hover, a:active {
   /* Text widget */
 }
 .widget_calendar caption {
-  padding: 0.5em 0;
-  font-size: 1em;
+  padding    : 0.5em 0;
+  font-size  : 1em;
   font-weight: 700;
-  text-align: left;
+  text-align : left;
 }
 .widget_calendar thead {
   background: #333;
-  color: #fff;
+  color     : #fff;
 }
 .widget_calendar thead th {
   border-bottom-width: 2px;
 }
 .widget_calendar td {
-  padding: 0.2em;
-  font-size: 0.8em;
+  padding   : 0.2em;
+  font-size : 0.8em;
   text-align: center;
   background: #d6d6d6;
-  border: 3px solid white;
+  border    : 3px solid white;
 }
 .widget_calendar th {
   border: none;
@@ -6364,8 +6355,374 @@ a:hover, a:active {
   background: #eaeaea;
 }
 .textwidget {
-  font-size: 0.8em;
+  font-size  : 0.8em;
   line-height: 1.6em;
+}
+.site-content .widget .social-widget {
+  margin: -1em;
+}
+.site-content .widget .social-widget a {
+  display   : inline-block;
+  text-align: center;
+}
+.site-content .widget .social-widget a, .site-content .widget .social-widget a:visited {
+  color: #fff;
+}
+.site-content .widget .social-widget.twoEM a div {
+  width    : 2em;
+  height   : 2em;
+  margin   : 0.6933em;
+  font-size: 1em;
+}
+.site-content .widget .social-widget.twoEM a div.rounded a div {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius   : 0.5em;
+  border-radius        : 0.5em;
+}
+.site-content .widget .social-widget.threeEM a div {
+  width    : 3em;
+  height   : 3em;
+  margin   : 0.1568em;
+  font-size: 2em;
+}
+.site-content .widget .social-widget.threeEM a div i {
+  margin-top: 0.1em;
+}
+.site-content .widget .social-widget.fourEM a div {
+  width : 4em;
+  height: 4em;
+  margin: 0.2568em;
+  font-size: 3em;
+}
+.site-content .widget .social-widget.fourEM a div i {
+  margin-top: 0.075em;
+}
+.site-content .widget .social-widget.circle a {
+  -webkit-border-radius: 100%;
+  -moz-border-radius   : 100%;
+  border-radius        : 100%;
+}
+.site-content .widget .social-widget.rounded a {
+  -webkit-border-radius: 1em;
+  -moz-border-radius   : 1em;
+  border-radius        : 1em;
+}
+.site-content .widget .social-widget.square a {
+  -webkit-border-radius: 0;
+  -moz-border-radius   : 0;
+  border-radius        : 0;
+}
+.site-content .widget .social-widget.background_fill a .facebook {
+  background: #3b5998;
+}
+.site-content .widget .social-widget.background_fill a .twitter {
+  background: #55acee;
+}
+.site-content .widget .social-widget.background_fill a .vk {
+  background: #45668e;
+}
+.site-content .widget .social-widget.background_fill a .youtube {
+  background: #b00;
+}
+.site-content .widget .social-widget.background_fill a .linkedin {
+  background: #007bb5;
+}
+.site-content .widget .social-widget.background_fill a .googleplus {
+  background: #dd4b39;
+}
+.site-content .widget .social-widget.background_fill a .skype {
+  background: #00aff0;
+}
+.site-content .widget .social-widget.background_fill a .reddit {
+  background: #057fd7;
+}
+.site-content .widget .social-widget.background_fill a .instagram {
+  background: #125688;
+}
+.site-content .widget .social-widget.background_fill a .pinterest {
+  background: #cb2027;
+}
+.site-content .widget .social-widget.background_fill a .tumblr {
+  background: #32506d;
+}
+.site-content .widget .social-widget.background_fill a .disqus {
+  background: #2e9eff;
+}
+.site-content .widget .social-widget.background_fill a .github {
+  background: #000;
+}
+.site-content .widget .social-widget.background_fill a .codepen {
+  background: #1b1c1b;
+}
+.site-content .widget .social-widget.background_fill a .stackoverflow {
+  background: #f47a20;
+}
+.site-content .widget .social-widget.background_fill a .dribbble {
+  background: #f26798;
+}
+.site-content .widget .social-widget.background_fill a .behance {
+  background: #1769ff;
+}
+.site-content .widget .social-widget.background_fill a .fivehundredpx {
+  background: #0099e5;
+}
+.site-content .widget .social-widget.background_fill a .flickr {
+  background: #ff0084;
+}
+.site-content .widget .social-widget.background_fill a .twitch {
+  background: #6441a5;
+}
+.site-content .widget .social-widget.background_fill a .vimeo {
+  background: #1ab7ea;
+}
+.site-content .widget .social-widget.background_fill a .soundcloud {
+  background: #ff3a00;
+}
+.site-content .widget .social-widget.background_fill a .lastfm {
+  background: #d21309;
+}
+.site-content .widget .social-widget.background_fill a .steam {
+  background: #0a1b40;
+}
+.site-content .widget .social-widget.background_fill a .xbox {
+  background: #107c10;
+}
+.site-content .widget .social-widget.background_fill a .playstation {
+  background: #0a3697;
+}
+.site-content .widget .social-widget.icon_color a .facebook i {
+  color: #3b5998;
+}
+.site-content .widget .social-widget.icon_color a .twitter i {
+  color: #55acee;
+}
+.site-content .widget .social-widget.icon_color a .vk i {
+  color: #45668e;
+}
+.site-content .widget .social-widget.icon_color a .youtube i {
+  color: #b00;
+}
+.site-content .widget .social-widget.icon_color a .linkedin i {
+  color: #007bb5;
+}
+.site-content .widget .social-widget.icon_color a .googleplus i {
+  color: #dd4b39;
+}
+.site-content .widget .social-widget.icon_color a .skype i {
+  color: #00aff0;
+}
+.site-content .widget .social-widget.icon_color a .reddit i {
+  color: #057fd7;
+}
+.site-content .widget .social-widget.icon_color a .instagram i {
+  color: #125688;
+}
+.site-content .widget .social-widget.icon_color a .pinterest i {
+  color: #cb2027;
+}
+.site-content .widget .social-widget.icon_color a .tumblr i {
+  color: #32506d;
+}
+.site-content .widget .social-widget.icon_color a .disqus i {
+  color: #2e9eff;
+}
+.site-content .widget .social-widget.icon_color a .github i {
+  color: #000;
+}
+.site-content .widget .social-widget.icon_color a .codepen i {
+  color: #1b1c1b;
+}
+.site-content .widget .social-widget.icon_color a .stackoverflow i {
+  color: #f47a20;
+}
+.site-content .widget .social-widget.icon_color a .dribbble i {
+  color: #f26798;
+}
+.site-content .widget .social-widget.icon_color a .behance i {
+  color: #1769ff;
+}
+.site-content .widget .social-widget.icon_color a .fivehundredpx i {
+  color: #0099e5;
+}
+.site-content .widget .social-widget.icon_color a .flickr i {
+  color: #ff0084;
+}
+.site-content .widget .social-widget.icon_color a .twitch i {
+  color: #6441a5;
+}
+.site-content .widget .social-widget.icon_color a .vimeo i {
+  color: #1ab7ea;
+}
+.site-content .widget .social-widget.icon_color a .soundcloud i {
+  color: #ff3a00;
+}
+.site-content .widget .social-widget.icon_color a .lastfm i {
+  color: #d21309;
+}
+.site-content .widget .social-widget.icon_color a .steam i {
+  color: #0a1b40;
+}
+.site-content .widget .social-widget.icon_color a .xbox i {
+  color: #107c10;
+}
+.site-content .widget .social-widget.icon_color a .playstation a {
+  color: #0a3697;
+}
+.site-content .widget .social-widget.icon_color_border a .facebook {
+  border: #3b5998 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .facebook i {
+  color: #3b5998;
+}
+.site-content .widget .social-widget.icon_color_border a .twitter {
+  border: #55acee solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .twitter i {
+  color: #55acee;
+}
+.site-content .widget .social-widget.icon_color_border a .vk {
+  border: #45668e solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .vk i {
+  color: #45668e;
+}
+.site-content .widget .social-widget.icon_color_border a .youtube {
+  border: #b00 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .youtube i {
+  color: #b00;
+}
+.site-content .widget .social-widget.icon_color_border a .linkedin {
+  border: #007bb5 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .linkedin i {
+  color: #007bb5;
+}
+.site-content .widget .social-widget.icon_color_border a .googleplus {
+  border: #dd4b39 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .googleplus i {
+  color: #dd4b39;
+}
+.site-content .widget .social-widget.icon_color_border a .skype {
+  border: #00aff0 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .skype i {
+  color: #00aff0;
+}
+.site-content .widget .social-widget.icon_color_border a .reddit {
+  border: #057fd7 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .reddit i {
+  color: #057fd7;
+}
+.site-content .widget .social-widget.icon_color_border a .instagram {
+  border: #125688 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .instagram i {
+  color: #125688;
+}
+.site-content .widget .social-widget.icon_color_border a .pinterest {
+  border: #cb2027 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .pinterest i {
+  color: #cb2027;
+}
+.site-content .widget .social-widget.icon_color_border a .tumblr {
+  border: #32506d solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .tumblr i {
+  color: #32506d;
+}
+.site-content .widget .social-widget.icon_color_border a .disqus {
+  border: #2e9eff solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .disqus i {
+  color: #2e9eff;
+}
+.site-content .widget .social-widget.icon_color_border a .github {
+  border: #000 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .github i {
+  color: #000;
+}
+.site-content .widget .social-widget.icon_color_border a .codepen {
+  border: #1b1c1b solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .codepen i {
+  color: #1b1c1b;
+}
+.site-content .widget .social-widget.icon_color_border a .stackoverflow {
+  border: #f47a20 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .stackoverflow i {
+  color: #f47a20;
+}
+.site-content .widget .social-widget.icon_color_border a .dribbble {
+  border: #f26798 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .dribbble i {
+  color: #f26798;
+}
+.site-content .widget .social-widget.icon_color_border a .behance {
+  border: #1769ff solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .behance i {
+  color: #1769ff;
+}
+.site-content .widget .social-widget.icon_color_border a .fivehundredpx {
+  border: #0099e5 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .fivehundredpx i {
+  color: #0099e5;
+}
+.site-content .widget .social-widget.icon_color_border a .flickr {
+  border: #ff0084 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .flickr i {
+  color: #ff0084;
+}
+.site-content .widget .social-widget.icon_color_border a .twitch {
+  border: #6441a5 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .twitch i {
+  color: #6441a5;
+}
+.site-content .widget .social-widget.icon_color_border a .vimeo {
+  border: #1ab7ea solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .vimeo i {
+  color: #1ab7ea;
+}
+.site-content .widget .social-widget.icon_color_border a .soundcloud {
+  border: #ff3a00 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .soundcloud i {
+  color: #ff3a00;
+}
+.site-content .widget .social-widget.icon_color_border a .lastfm {
+  border: #d21309 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .lastfm i {
+  color: #d21309;
+}
+.site-content .widget .social-widget.icon_color_border a .steam {
+  border: #0a1b40 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .steam i {
+  color: #0a1b40;
+}
+.site-content .widget .social-widget.icon_color_border a .xbox {
+  border: #107c10 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .xbox i {
+  color: #107c10;
+}
+.site-content .widget .social-widget.icon_color_border a .playstation {
+  border: #0a3697 solid 0.2em;
+}
+.site-content .widget .social-widget.icon_color_border a .playstation i {
+  color: #0a3697;
 }
 .content-area {
   overflow-x: hidden;
