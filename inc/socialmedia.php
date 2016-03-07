@@ -16,7 +16,7 @@ class Undergrad_social_widget extends WP_Widget{
     $twitter 		= !empty($instance['twitter']) ? $instance['twitter'] : '';
     $vk 		= !empty($instance['vk']) ? $instance['vk'] : '';
     $youtube 		= !empty($instance['youtube']) ? $instance['youtube'] : '';
-    $divnkedin 		= !empty($instance['divnkedin']) ? $instance['divnkedin'] : '';
+    $linkedin 		= !empty($instance['linkedin']) ? $instance['linkedin'] : '';
     $googleplus 		= !empty($instance['googleplus']) ? $instance['googleplus'] : '';
     $skype 		= !empty($instance['skype']) ? $instance['skype'] : '';
     $reddit 		= !empty($instance['reddit']) ? $instance['reddit'] : '';
@@ -30,7 +30,7 @@ class Undergrad_social_widget extends WP_Widget{
     $dribbble 		= !empty($instance['dribbble']) ? $instance['dribbble'] : '';
     $behance 		= !empty($instance['behance']) ? $instance['behance'] : '';
     $fivehundredpx 		= !empty($instance['fivehundredpx']) ? $instance['fivehundredpx'] : '';
-    $fdivckr 		= !empty($instance['fdivckr']) ? $instance['fdivckr'] : '';
+    $flickr 		= !empty($instance['flickr']) ? $instance['flickr'] : '';
     $twitch 		= !empty($instance['twitch']) ? $instance['twitch'] : '';
     $vimeo 		= !empty($instance['vimeo']) ? $instance['vimeo'] : '';
     $soundcloud 		= !empty($instance['soundcloud']) ? $instance['soundcloud'] : '';
@@ -95,8 +95,8 @@ class Undergrad_social_widget extends WP_Widget{
     <input type="text" style="width:100%" id="<?php echo $this->get_field_id('youtube'); ?>" name="<?php echo $this->get_field_name('youtube'); ?>" value="<?php echo $youtube; ?>">
   </p>
   <p>
-    <label for="<?php echo $this->get_field_id('divnkedin'); ?>">divnkedin</label><br>
-    <input type="text" style="width:100%" id="<?php echo $this->get_field_id('divnkedin'); ?>" name="<?php echo $this->get_field_name('divnkedin'); ?>" value="<?php echo $divnkedin; ?>">
+    <label for="<?php echo $this->get_field_id('linkedin'); ?>">linkedin</label><br>
+    <input type="text" style="width:100%" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" value="<?php echo $linkedin; ?>">
   </p>
   <p>
     <label for="<?php echo $this->get_field_id('googleplus'); ?>">googleplus</label><br>
@@ -155,8 +155,8 @@ class Undergrad_social_widget extends WP_Widget{
     <input type="text" style="width:100%" id="<?php echo $this->get_field_id('fivehundredpx'); ?>" name="<?php echo $this->get_field_name('fivehundredpx'); ?>" value="<?php echo $fivehundredpx; ?>">
   </p>
   <p>
-    <label for="<?php echo $this->get_field_id('fdivckr'); ?>">fdivckr</label><br>
-    <input type="text" style="width:100%" id="<?php echo $this->get_field_id('fdivckr'); ?>" name="<?php echo $this->get_field_name('fdivckr'); ?>" value="<?php echo $fdivckr; ?>">
+    <label for="<?php echo $this->get_field_id('flickr'); ?>">flickr</label><br>
+    <input type="text" style="width:100%" id="<?php echo $this->get_field_id('flickr'); ?>" name="<?php echo $this->get_field_name('flickr'); ?>" value="<?php echo $flickr; ?>">
   </p>
   <hr style="border:none;height:1px;background:#BFBFBF">
   <p>Video and Audio Social Networks</p>
@@ -205,7 +205,7 @@ class Undergrad_social_widget extends WP_Widget{
     $instance['twitter'] 		= esc_url($new_instance['twitter']);
     $instance['vk'] 		= esc_url($new_instance['vk']);
     $instance['youtube'] 		= esc_url($new_instance['youtube']);
-    $instance['divnkedin'] 		= esc_url($new_instance['divnkedin']);
+    $instance['linkedin'] 		= esc_url($new_instance['linkedin']);
     $instance['googleplus'] 		= esc_url($new_instance['googleplus']);
     $instance['skype'] 		= esc_url($new_instance['skype']);
     $instance['reddit'] 		= esc_url($new_instance['reddit']);
@@ -219,7 +219,7 @@ class Undergrad_social_widget extends WP_Widget{
     $instance['dribbble'] 		= esc_url($new_instance['dribbble']);
     $instance['behance'] 		= esc_url($new_instance['behance']);
     $instance['fivehundredpx'] 		= esc_url($new_instance['fivehundredpx']);
-    $instance['fdivckr'] 		= esc_url($new_instance['fdivckr']);
+    $instance['flickr'] 		= esc_url($new_instance['flickr']);
     $instance['twitch'] 		= esc_url($new_instance['twitch']);
     $instance['vimeo'] 		= esc_url($new_instance['vimeo']);
     $instance['soundcloud'] 		= esc_url($new_instance['soundcloud']);
@@ -272,7 +272,7 @@ class Undergrad_social_widget extends WP_Widget{
         <?php echo !empty($instance['twitter']) 	? '<a target="_blank" data-title="twitter" href="'.$instance['twitter'].'"><div class="twitter"><i class="zmdi zmdi-twitter"></i></div></a>' : '' ?>
         <?php echo !empty($instance['vk']) 	? '<a target="_blank" data-title="vk" href="'.$instance['vk'].'"><div class="vk"><i class="zmdi zmdi-vk"></i></div></a>' : '' ?>
         <?php echo !empty($instance['youtube']) 	? '<a target="_blank" data-title="youtube" href="'.$instance['youtube'].'"><div class="youtube"><i class="zmdi zmdi-youtube-play"></i></div></a>' : '' ?>
-        <?php echo !empty($instance['divnkedin']) 	? '<a target="_blank" data-title="divnkedin" href="'.$instance['divnkedin'].'"><div class="divnkedin"><i class="zmdi zmdi-divnkedin"></i></div></a>' : '' ?>
+        <?php echo !empty($instance['linkedin']) 	? '<a target="_blank" data-title="linkedin" href="'.$instance['linkedin'].'"><div class="linkedin"><i class="zmdi zmdi-linkedin"></i></div></a>' : '' ?>
         <?php echo !empty($instance['googleplus']) 	? '<a target="_blank" data-title="googleplus" href="'.$instance['googleplus'].'"><div class="googleplus"><i class="zmdi zmdi-google-plus"></i></div></a>' : '' ?>
         <?php echo !empty($instance['skype']) 	? '<a target="_blank" data-title="skype" href="'.$instance['skype'].'"><div class="skype"><i class="zmdi zmdi-skype"></i></div></a>' : '' ?>
         <?php echo !empty($instance['reddit']) 	? '<a target="_blank" data-title="reddit" href="'.$instance['reddit'].'"><div class="reddit"><i class="zmdi zmdi-reddit"></i></div></a>' : '' ?>
@@ -286,7 +286,7 @@ class Undergrad_social_widget extends WP_Widget{
         <?php echo !empty($instance['dribbble']) 	? '<a target="_blank" data-title="dribbble" href="'.$instance['dribbble'].'"><div class="dribbble"><i class="zmdi zmdi-dribbble"></i></div></a>' : '' ?>
         <?php echo !empty($instance['behance']) 	? '<a target="_blank" data-title="behance" href="'.$instance['behance'].'"><div class="behance"><i class="zmdi zmdi-behance"></i></div></a>' : '' ?>
         <?php echo !empty($instance['fivehundredpx']) 	? '<a target="_blank" data-title="fivehundredpx" href="'.$instance['fivehundredpx'].'"><div class="fivehundredpx"><i class="zmdi zmdi-500px"></i></div></a>' : '' ?>
-        <?php echo !empty($instance['fdivckr']) 	? '<div class="fdivckr"><a target="_blank" data-title="fdivckr" href="'.$instance['fdivckr'].'"><i class="zmdi zmdi-fdivckr"></i></div></a>' : '' ?>
+        <?php echo !empty($instance['flickr']) 	? '<a target="_blank" data-title="flickr" href="'.$instance['flickr'].'"><div class="flickr"><i class="zmdi zmdi-flickr"></i></div></a>' : '' ?>
         <?php echo !empty($instance['twitch']) 	? '<a target="_blank" data-title="twitch" href="'.$instance['twitch'].'"><div class="twitch"><i class="zmdi zmdi-twitch"></i></div></a>' : '' ?>
         <?php echo !empty($instance['vimeo']) 	? '<a target="_blank" data-title="vimeo" href="'.$instance['vimeo'].'"><div class="vimeo"><i class="zmdi zmdi-vimeo"></i></div></a>' : '' ?>
         <?php echo !empty($instance['soundcloud']) 	? '<a target="_blank" data-title="soundcloud" href="'.$instance['soundcloud'].'"><div class="soundcloud"><i class="zmdi zmdi-soundcloud"></i></div></a>' : '' ?>

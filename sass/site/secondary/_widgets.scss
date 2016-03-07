@@ -184,46 +184,80 @@
           color: #fff;
         }
       }
-      &.twoEM a div {
-          width    : 2em;
-          height   : 2em;
-          margin   : .6933em;
-          font-size: 1em;
+      &.twoEM {
+        a {
+          margin: .6933em;
+          div {
+            width : 2em;
+            height: 2em;
+            i {
+              margin-top: .525em;
+              font-size : 1em;
+            }
+          }
+        }
         &.rounded a div {
           -webkit-border-radius: .5em;
           -moz-border-radius   : .5em;
           border-radius        : .5em;
         }
-      }
-      &.threeEM a div {
-        width    : 3em;
-        height   : 3em;
-        margin   : .1568em;
-        font-size: 2em;
-        i {
-          margin-top: .1em;
+        &.icon_color_border a div i {
+          margin-top: .4em;
         }
       }
-      &.fourEM a div {
-        width : 4em;
-        height: 4em;
-        margin: .2568em;
-          font-size: 3em;
-          i {
-            margin-top: .075em;
+      &.threeEM {
+        a {
+          margin: .271em;
+          div {
+            width : 3em;
+            height: 3em;
+            i {
+              margin-top: .25em;
+              font-size : 1.9em;
+            }
+          }
+        }
+        &.rounded a div {
+          -webkit-border-radius: .5em;
+          -moz-border-radius   : .5em;
+          border-radius        : .5em;
+        }
+        &.icon_color_border a div i {
+          margin-top: .4em;
         }
       }
-      &.circle a {
+      &.fourEM {
+        a {
+          margin: .2568em;
+          div {
+            width : 4em;
+            height: 4em;
+            i {
+              margin-top: .175em;
+              font-size : 2.9em;
+            }
+          }
+        }
+        &.rounded a div {
+          -webkit-border-radius: .5em;
+          -moz-border-radius   : .5em;
+          border-radius        : .5em;
+        }
+        &.icon_color_border a div i {
+          margin-top: .5em;
+        }
+      }
+      &.circle a div {
         -webkit-border-radius: 100%;
         -moz-border-radius   : 100%;
         border-radius        : 100%;
       }
-      &.rounded a {
+      &.rounded a div {
         -webkit-border-radius: 1em;
         -moz-border-radius   : 1em;
         border-radius        : 1em;
       }
-      &.square a {
+      &.square a div {
         -webkit-border-radius: 0;
         -moz-border-radius   : 0;
         border-radius        : 0;
@@ -309,85 +343,85 @@
         }
       }
       &.icon_color a {
-          .facebook i {
-            color: $facebook;
-          }
-          .twitter i {
-            color: $twitter;
-          }
-          .vk i {
-            color: $vk;
-          }
-          .youtube i {
-            color: $youtube;
-          }
-          .linkedin i {
-            color: $linkedin;
-          }
-          .googleplus i {
-            color: $googleplus;
-          }
-          .skype i {
-            color: $skype;
-          }
-          .reddit i {
-            color: $reddit;
-          }
-          .instagram i {
-            color: $instagram;
-          }
-          .pinterest i {
-            color: $pinterest;
-          }
-          .tumblr i {
-            color: $tumblr;
-          }
-          .disqus i {
-            color: $disqus;
-          }
-          .github i {
-            color: $github;
-          }
-          .codepen i {
-            color: $codepen;
-          }
-          .stackoverflow i {
-            color: $stackoverflow;
-          }
-          .dribbble i {
-            color: $dribbble;
-          }
-          .behance i {
-            color: $behance;
-          }
-          .fivehundredpx i {
-            color: $fivehundredpx;
-          }
-          .flickr i {
-            color: $flickr;
-          }
-          .twitch i {
-            color: $twitch;
-          }
-          .vimeo i {
-            color: $vimeo;
-          }
-          .soundcloud i {
-            color: $soundcloud;
-          }
-          .lastfm i {
-            color: $lastfm;
-          }
-          .steam i {
-            color: $steam;
-          }
-          .xbox i {
-            color: $xbox;
-          }
-          .playstation a {
-            color: $playstation;
-          }
+        .facebook i {
+          color: $facebook;
         }
+        .twitter i {
+          color: $twitter;
+        }
+        .vk i {
+          color: $vk;
+        }
+        .youtube i {
+          color: $youtube;
+        }
+        .linkedin i {
+          color: $linkedin;
+        }
+        .googleplus i {
+          color: $googleplus;
+        }
+        .skype i {
+          color: $skype;
+        }
+        .reddit i {
+          color: $reddit;
+        }
+        .instagram i {
+          color: $instagram;
+        }
+        .pinterest i {
+          color: $pinterest;
+        }
+        .tumblr i {
+          color: $tumblr;
+        }
+        .disqus i {
+          color: $disqus;
+        }
+        .github i {
+          color: $github;
+        }
+        .codepen i {
+          color: $codepen;
+        }
+        .stackoverflow i {
+          color: $stackoverflow;
+        }
+        .dribbble i {
+          color: $dribbble;
+        }
+        .behance i {
+          color: $behance;
+        }
+        .fivehundredpx i {
+          color: $fivehundredpx;
+        }
+        .flickr i {
+          color: $flickr;
+        }
+        .twitch i {
+          color: $twitch;
+        }
+        .vimeo i {
+          color: $vimeo;
+        }
+        .soundcloud i {
+          color: $soundcloud;
+        }
+        .lastfm i {
+          color: $lastfm;
+        }
+        .steam i {
+          color: $steam;
+        }
+        .xbox i {
+          color: $xbox;
+        }
+        .playstation a {
+          color: $playstation;
+        }
+      }
       &.icon_color_border a {
         .facebook {
           border: $facebook solid .2em;
