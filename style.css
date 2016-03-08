@@ -6127,18 +6127,23 @@ a:hover, a:active {
 }
 @media screen and (min-width: 30em) {
   /* Make sure select elements fit in widgets. */
-  /* Archive and Categories widgets */  .widget li ul, .widget li ol {
+  /* header icons widget */  .widget li ul, .widget li ol {
     margin-left: 1em;
   }
 }
-.widget_archive .widget-title::before {
-  right: 0;
+.widget_archive .widget-title::before, .widget_calendar .widget-title::before, .widget_categories .widget-title::before, .widget_pages .widget-title::before, .widget_meta .widget-title::before, .widget_recent_comments .widget-title::before, .widget_recent_entries .widget-title::before, .widget_rss .widget-title::before, .widget_search .widget-title::before, .widget_text .widget-title::before, .widget_tag_cloud .widget-title::before, .widget_nav_menu .widget-title::before {
   font-family: "Material-Design-Iconic-Font";
-  content: "\f228";
   margin-right: 10px;
   border: 0.3em solid #2b3439;
   padding: 0.5em 0.625em;
   border-radius: 100%;
+  /* Archive and Categories widgets */
+}
+.widget_archive {
+  /* categories widget. */
+}
+.widget_archive .widget-title::before {
+  content: "\f228";
 }
 .widget_archive li {
   color: #2980b9;
@@ -6154,27 +6159,50 @@ a:hover, a:active {
   font-size: 1em;
 }
 .widget_archive #archives-dropdown--1 {
-  margin-top: 0.5em;
+  margin-top: 0.7em;
+}
+.widget_categories {
+  /* Search widget. */
+}
+.widget_categories .widget-title::before {
+  content: "\f228";
 }
 .widget_categories .children {
   padding-top: 0;
   padding-bottom: 0.5em;
-  /* Search widget. */
 }
-.widget_search .search-submit {
-  display: none;
+.widget_search {
   /* Pages and Menu widgets */
 }
-.widget_pages .children, .widget_nav_menu .sub-menu {
+.widget_search .widget-title::before {
+  content: "\f228";
+}
+.widget_search .search-form {
+  margin-top: 0.7em;
+}
+.widget_search .search-form .search-submit {
+  display: none;
+}
+.widget_pages {
+  /* Meta widget */
+}
+.widget_pages .widget-title::before {
+  content: "\f228";
+}
+.widget_pages .children, .widget_pages .widget_nav_menu .sub-menu {
   padding-top: 0;
   padding-bottom: 0.5em;
 }
-.widget_pages a, .widget_nav_menu a {
+.widget_pages a, .widget_pages .widget_nav_menu a {
   display: block;
   padding: 1em 0;
   border-bottom: 1px solid #c3c3c3;
-  /* Meta widget */
+}
+.widget_meta {
   /* RSS widget */
+}
+.widget_meta .widget-title::before {
+  content: "\f228";
 }
 .widget_rss li {
   margin-bottom: 1em;
@@ -6206,6 +6234,9 @@ a:hover, a:active {
 .widget_calendar {
   font-family: "Fira Sans", sans-serif;
   /* Text widget */
+}
+.widget_calendar .widget-title::before {
+  content: "\f228";
 }
 .widget_calendar caption {
   padding: 0.5em 0;

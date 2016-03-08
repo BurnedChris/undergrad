@@ -64,16 +64,29 @@
   }
 }
 /* Make sure select elements fit in widgets. */
+/* header icons widget */
+.widget_archive .widget-title::before,
+.widget_calendar .widget-title::before,
+.widget_categories .widget-title::before,
+.widget_pages .widget-title::before,
+.widget_meta .widget-title::before,
+.widget_recent_comments .widget-title::before,
+.widget_recent_entries .widget-title::before,
+.widget_rss .widget-title::before,
+.widget_search .widget-title::before,
+.widget_text .widget-title::before,
+.widget_tag_cloud .widget-title::before,
+.widget_nav_menu .widget-title::before {
+  font-family: "Material-Design-Iconic-Font";
+  margin-right: 10px;
+  border: 0.3em solid #2b3439;
+  padding: 0.5em 0.625em;
+  border-radius: 100%;
+}
 /* Archive and Categories widgets */
 .widget_archive {
   .widget-title::before {
-    right: 0;
-    font-family: "Material-Design-Iconic-Font";
     content: "\f228";
-    margin-right: 10px;
-    border: 0.3em solid #2b3439;
-    padding: 0.5em 0.625em;
-    border-radius: 100%;
   }
   li {
     color: $color__acent;
@@ -88,61 +101,25 @@
       font-size: 1em;
     }
   }
-  #archives-dropdown--1{
-        margin-top: 0.5em;
+  #archives-dropdown--1 {
+    margin-top: 0.7em;
   }
 }
-.widget_categories .children {
-  padding-top: 0;
-  padding-bottom: 0.5em;
-}
-/* Search widget. */
-.widget_search .search-submit {
-  display: none;
-}
-/* Pages and Menu widgets */
-.widget_pages .children,
-.widget_nav_menu .sub-menu {
-  padding-top: 0;
-  padding-bottom: 0.5em;
-}
-.widget_pages a,
-.widget_nav_menu a {
-  display: block;
-  padding: 1em 0;
-  border-bottom: 1px solid #c3c3c3;
-}
-/* Meta widget */
-/* RSS widget */
-.widget_rss li {
-  margin-bottom: 1em;
-}
-.widget li a.rsswidget {
-  padding-right: 0.5em;
-  font-size: 1em;
-  line-height: 1.4em;
-}
-.rss-date,
-.widget_rss cite {
-  color: #333;
-  font-size: 0.8em;
-}
-.rssSummary {
-  padding: 0.5em 0;
-  font-family: "Merriweather", serif;
-  font-size: 0.8em;
-  line-height: 1.4em;
-}
-/* Search widget */
-.widget_search input[type="search"] {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.5em 1em;
-  border: 1px solid #c3c3c3;
-  border-radius: 0;
+/* categories widget. */
+.widget_categories {
+  .widget-title::before {
+    content: "\f228";
+  }
+  .children {
+    padding-top: 0;
+    padding-bottom: 0.5em;
+  }
 }
 /* Calendar widget */
 .widget_calendar {
+  .widget-title::before {
+    content: "\f228";
+  }
   font-family: "Fira Sans", sans-serif;
   caption {
     padding: 0.5em 0;
@@ -170,6 +147,81 @@
   .pad {
     background: #eaeaea;
   }
+}
+/* Pages and Menu widgets */
+.widget_pages {
+  .widget-title::before {
+    content: "\f228";
+  }
+  .children,
+  .widget_nav_menu .sub-menu {
+    padding-top: 0;
+    padding-bottom: 0.5em;
+  }
+  a,
+  .widget_nav_menu a {
+    display: block;
+    padding: 1em 0;
+    border-bottom: 1px solid #c3c3c3;
+  }
+}
+/* Meta widget */
+.widget_meta {
+  .widget-title::before {
+    content: "\f228";
+  }
+}
+/* Search widget. */
+.widget_search {
+  .widget-title::before {
+    content: "\f228";
+  }
+  .search-form {
+    margin-top: 0.7em;
+    .search-submit {
+      display: none;
+    }
+  }
+}
+/* Recent comments. */
+.widget_recent_comments {
+  .widget-title::before {
+    content: "\f228";
+  }
+}
+/* Recent entries. */
+.widget_recent_entries{
+  .widget-title::before {
+    content: "\f228";
+  }
+}
+/* RSS widget */
+.widget_rss li {
+  margin-bottom: 1em;
+}
+.widget li a.rsswidget {
+  padding-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.rss-date,
+.widget_rss cite {
+  color: #333;
+  font-size: 0.8em;
+}
+.rssSummary {
+  padding: 0.5em 0;
+  font-family: "Merriweather", serif;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+/* Search widget */
+.widget_search input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid #c3c3c3;
+  border-radius: 0;
 }
 /* Text widget */
 .textwidget {
