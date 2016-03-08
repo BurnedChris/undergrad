@@ -1,0 +1,589 @@
+#secondary {
+  position: relative;
+  padding: 1.8em 1.4em 0;
+}
+@media screen and (min-width: 45em) {
+  #secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.8em;
+  }
+  .widget {
+    float: left;
+    width: 300px;
+    margin: 0 0.9em 1.8em;
+  }
+}
+.widget-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: $color__acent;
+}
+.widget {
+  ul,
+  ol {
+    padding: 0.7em 0 0;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    list-style-type: none;
+  }
+}
+.widget {
+  li {
+    ul,
+    ol {
+      margin-left: 0.5em;
+    }
+    &:last-child {
+      padding-bottom: 0.35em;
+    }
+  }
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9em;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  select {
+    width: 100%;
+    padding: 0.5em;
+  }
+}
+@media screen and (min-width: 30em) {
+  .widget li {
+    ul,
+    ol {
+      margin-left: 1em;
+    }
+  }
+}
+/* Make sure select elements fit in widgets. */
+/* Archive and Categories widgets */
+.widget_archive {
+  .widget-title::before {
+    right: 0;
+    font-family: "Material-Design-Iconic-Font";
+    content: "\f228";
+    margin-right: 10px;
+    border: 0.3em solid #2b3439;
+    padding: 0.5em 0.625em;
+    border-radius: 100%;
+  }
+  li {
+    color: $color__acent;
+    text-align: right;
+    background: #19242a;
+    margin: 0.5em 0;
+    padding: 0.75em 0.5em;
+    text-align: right;
+    font-weight: $font__weight-bold;
+    a {
+      float: left;
+      font-size: 1em;
+    }
+  }
+  #archives-dropdown--1{
+        margin-top: 0.5em;
+  }
+}
+.widget_categories .children {
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
+/* Pages and Menu widgets */
+.widget_pages .children,
+.widget_nav_menu .sub-menu {
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+.widget_pages a,
+.widget_nav_menu a {
+  display: block;
+  padding: 1em 0;
+  border-bottom: 1px solid #c3c3c3;
+}
+/* Meta widget */
+/* RSS widget */
+.widget_rss li {
+  margin-bottom: 1em;
+}
+.widget li a.rsswidget {
+  padding-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.rss-date,
+.widget_rss cite {
+  color: #333;
+  font-size: 0.8em;
+}
+.rssSummary {
+  padding: 0.5em 0;
+  font-family: "Merriweather", serif;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+/* Search widget */
+.widget_search input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid #c3c3c3;
+  border-radius: 0;
+}
+/* Calendar widget */
+.widget_calendar {
+  font-family: "Fira Sans", sans-serif;
+  caption {
+    padding: 0.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+  }
+  thead {
+    background: #333;
+    color: #fff;
+    th {
+      border-bottom-width: 2px;
+    }
+  }
+  td {
+    padding: 0.2em;
+    font-size: 0.8em;
+    text-align: center;
+    background: #d6d6d6;
+    border: 3px solid white;
+  }
+  th {
+    border: none;
+  }
+  .pad {
+    background: #eaeaea;
+  }
+}
+/* Text widget */
+.textwidget {
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+.site-content {
+  .widget {
+    .social-widget {
+      margin: -1em;
+      a {
+        display: inline-block;
+        text-align: center;
+        &,
+        &:visited {
+          color: #fff;
+        }
+      }
+      &.twoEM {
+        a {
+          margin: 0.6933em;
+          div {
+            width: 2em;
+            height: 2em;
+            i {
+              margin-top: 0.525em;
+              font-size: 1em;
+            }
+          }
+        }
+        &.rounded a div {
+          -webkit-border-radius: 0.5em;
+          -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+        }
+        &.icon_color_border a div i {
+          margin-top: 0.4em;
+        }
+      }
+      &.threeEM {
+        a {
+          margin: 0.271em;
+          div {
+            width: 3em;
+            height: 3em;
+            i {
+              margin-top: 0.25em;
+              font-size: 1.9em;
+            }
+          }
+        }
+        &.rounded a div {
+          -webkit-border-radius: 0.5em;
+          -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+        }
+        &.icon_color_border a div i {
+          margin-top: 0.4em;
+        }
+      }
+      &.fourEM {
+        a {
+          margin: 0.2568em;
+          div {
+            width: 4em;
+            height: 4em;
+            i {
+              margin-top: 0.175em;
+              font-size: 2.9em;
+            }
+          }
+        }
+        &.rounded a div {
+          -webkit-border-radius: 0.5em;
+          -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+        }
+        &.icon_color_border a div i {
+          margin-top: 0.5em;
+        }
+      }
+      &.circle a div {
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+      }
+      &.rounded a div {
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        border-radius: 1em;
+      }
+      &.square a div {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      &.background_fill a {
+        .facebook {
+          background: $facebook;
+        }
+        .twitter {
+          background: $twitter;
+        }
+        .vk {
+          background: $vk;
+        }
+        .youtube {
+          background: $youtube;
+        }
+        .linkedin {
+          background: $linkedin;
+        }
+        .googleplus {
+          background: $googleplus;
+        }
+        .skype {
+          background: $skype;
+        }
+        .reddit {
+          background: $reddit;
+        }
+        .instagram {
+          background: $instagram;
+        }
+        .pinterest {
+          background: $pinterest;
+        }
+        .tumblr {
+          background: $tumblr;
+        }
+        .disqus {
+          background: $disqus;
+        }
+        .github {
+          background: $github;
+        }
+        .codepen {
+          background: $codepen;
+        }
+        .stackoverflow {
+          background: $stackoverflow;
+        }
+        .dribbble {
+          background: $dribbble;
+        }
+        .behance {
+          background: $behance;
+        }
+        .fivehundredpx {
+          background: $fivehundredpx;
+        }
+        .flickr {
+          background: $flickr;
+        }
+        .twitch {
+          background: $twitch;
+        }
+        .vimeo {
+          background: $vimeo;
+        }
+        .soundcloud {
+          background: $soundcloud;
+        }
+        .lastfm {
+          background: $lastfm;
+        }
+        .steam {
+          background: $steam;
+        }
+        .xbox {
+          background: $xbox;
+        }
+        .playstation {
+          background: $playstation;
+        }
+      }
+      &.icon_color a {
+        .facebook i {
+          color: $facebook;
+        }
+        .twitter i {
+          color: $twitter;
+        }
+        .vk i {
+          color: $vk;
+        }
+        .youtube i {
+          color: $youtube;
+        }
+        .linkedin i {
+          color: $linkedin;
+        }
+        .googleplus i {
+          color: $googleplus;
+        }
+        .skype i {
+          color: $skype;
+        }
+        .reddit i {
+          color: $reddit;
+        }
+        .instagram i {
+          color: $instagram;
+        }
+        .pinterest i {
+          color: $pinterest;
+        }
+        .tumblr i {
+          color: $tumblr;
+        }
+        .disqus i {
+          color: $disqus;
+        }
+        .github i {
+          color: $github;
+        }
+        .codepen i {
+          color: $codepen;
+        }
+        .stackoverflow i {
+          color: $stackoverflow;
+        }
+        .dribbble i {
+          color: $dribbble;
+        }
+        .behance i {
+          color: $behance;
+        }
+        .fivehundredpx i {
+          color: $fivehundredpx;
+        }
+        .flickr i {
+          color: $flickr;
+        }
+        .twitch i {
+          color: $twitch;
+        }
+        .vimeo i {
+          color: $vimeo;
+        }
+        .soundcloud i {
+          color: $soundcloud;
+        }
+        .lastfm i {
+          color: $lastfm;
+        }
+        .steam i {
+          color: $steam;
+        }
+        .xbox i {
+          color: $xbox;
+        }
+        .playstation a {
+          color: $playstation;
+        }
+      }
+      &.icon_color_border a {
+        .facebook {
+          border: $facebook solid 0.2em;
+          & i {
+            color: $facebook;
+          }
+        }
+        .twitter {
+          border: $twitter solid 0.2em;
+          & i {
+            color: $twitter;
+          }
+        }
+        .vk {
+          border: $vk solid 0.2em;
+          & i {
+            color: $vk;
+          }
+        }
+        .youtube {
+          border: $youtube solid 0.2em;
+          & i {
+            color: $youtube;
+          }
+        }
+        .linkedin {
+          border: $linkedin solid 0.2em;
+          & i {
+            color: $linkedin;
+          }
+        }
+        .googleplus {
+          border: $googleplus solid 0.2em;
+          & i {
+            color: $googleplus;
+          }
+        }
+        .skype {
+          border: $skype solid 0.2em;
+          & i {
+            color: $skype;
+          }
+        }
+        .reddit {
+          border: $reddit solid 0.2em;
+          & i {
+            color: $reddit;
+          }
+        }
+        .instagram {
+          border: $instagram solid 0.2em;
+          & i {
+            color: $instagram;
+          }
+        }
+        .pinterest {
+          border: $pinterest solid 0.2em;
+          & i {
+            color: $pinterest;
+          }
+        }
+        .tumblr {
+          border: $tumblr solid 0.2em;
+          & i {
+            color: $tumblr;
+          }
+        }
+        .disqus {
+          border: $disqus solid 0.2em;
+          & i {
+            color: $disqus;
+          }
+        }
+        .github {
+          border: $github solid 0.2em;
+          & i {
+            color: $github;
+          }
+        }
+        .codepen {
+          border: $codepen solid 0.2em;
+          & i {
+            color: $codepen;
+          }
+        }
+        .stackoverflow {
+          border: $stackoverflow solid 0.2em;
+          & i {
+            color: $stackoverflow;
+          }
+        }
+        .dribbble {
+          border: $dribbble solid 0.2em;
+          & i {
+            color: $dribbble;
+          }
+        }
+        .behance {
+          border: $behance solid 0.2em;
+          & i {
+            color: $behance;
+          }
+        }
+        .fivehundredpx {
+          border: $fivehundredpx solid 0.2em;
+          & i {
+            color: $fivehundredpx;
+          }
+        }
+        .flickr {
+          border: $flickr solid 0.2em;
+          & i {
+            color: $flickr;
+          }
+        }
+        .twitch {
+          border: $twitch solid 0.2em;
+          & i {
+            color: $twitch;
+          }
+        }
+        .vimeo {
+          border: $vimeo solid 0.2em;
+          & i {
+            color: $vimeo;
+          }
+        }
+        .soundcloud {
+          border: $soundcloud solid 0.2em;
+          & i {
+            color: $soundcloud;
+          }
+        }
+        .lastfm {
+          border: $lastfm solid 0.2em;
+          & i {
+            color: $lastfm;
+          }
+        }
+        .steam {
+          border: $steam solid 0.2em;
+          & i {
+            color: $steam;
+          }
+        }
+        .xbox {
+          border: $xbox solid 0.2em;
+          & i {
+            color: $xbox;
+          }
+        }
+        .playstation {
+          border: $playstation solid 0.2em;
+          & i {
+            color: $playstation;
+          }
+        }
+      }
+    }
+  }
+}

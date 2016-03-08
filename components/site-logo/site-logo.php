@@ -1,0 +1,1 @@
+<?php undergrad_the_site_logo(); ?>

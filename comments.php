@@ -2,10 +2,8 @@
 /**
  * The template for displaying comments.
  *
- * This is the template that displays the area of the page that contains both the current comments
+ * The area of the page that contains both current comments
  * and the comment form.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Undergrad
  */
@@ -25,44 +23,22 @@ if ( post_password_required() ) {
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'Undergrad' ) ),
-					number_format_i18n( get_comments_number() )
-				);
-			?>
-		</h2>
 
-		<ol class="comment-list">
-			<?php
-				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
-					'avatar_size' => '96',
-				) );
-			?>
-		</ol><!-- .comment-list -->
+		<?php get_template_part( 'components/comment-title/comment-title' ); ?>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'Undergrad' ); ?></h2>
-			<div class="nav-links">
+		<?php get_template_part( 'components/comment-navigation-above/comment-navigation-above' ); ?>
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'Undergrad' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'Undergrad' ) ); ?></div>
+		<?php get_template_part( 'components/comment-list/comment-list' ); ?>
 
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-below -->
-		<?php endif; // Check for comment navigation. ?>
+		<?php get_template_part( 'components/comment-navigation-below/comment-navigation-below' ); ?>
 
 	<?php endif; // Check for have_comments(). ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'Undergrad' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'undergrad' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

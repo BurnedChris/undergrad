@@ -1,53 +1,39 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature.
- *
- * You can add an optional custom header image to header.php like so ...
- *
-	<?php if ( get_header_image() ) : ?>
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-	</a>
-	<?php endif; // End header image check. ?>
- *
- * @link http://codex.wordpress.org/Custom_Headers
- *
  * @package Undergrad
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses Undergrad_header_style()
- * @uses Undergrad_admin_header_style()
- * @uses Undergrad_admin_header_image()
+ * @uses undergrad_header_style()
+ * @uses undergrad_admin_header_style()
+ * @uses undergrad_admin_header_image()
  */
-function Undergrad_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'Undergrad_custom_header_args', array(
+function undergrad_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'undergrad_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => 'ffffff',
-		'width'                  => 1920,
-		'height'                 => 420,
+		'default-text-color'     => '000000',
+		'width'                  => 2000,
+		'height'                 => 1500,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'Undergrad_header_style',
-		'admin-head-callback'    => 'Undergrad_admin_header_style',
-		'admin-preview-callback' => 'Undergrad_admin_header_image',
+		'header-text'            => false,
 	) ) );
 }
-add_action( 'after_setup_theme', 'Undergrad_custom_header_setup' );
+add_action( 'after_setup_theme', 'undergrad_custom_header_setup' );
 
-if ( ! function_exists( 'Undergrad_header_style' ) ) :
+if ( ! function_exists( 'undergrad_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see Undergrad_custom_header_setup().
+ * @see undergrad_custom_header_setup().
  */
-function Undergrad_header_style() {
+function undergrad_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value.
-	if ( HEADER_TEXTCOLOR === $header_text_color ) {
+	if ( HEADER_TEXTCOLOR == $header_text_color ) {
 		return;
 	}
 
@@ -56,7 +42,7 @@ function Undergrad_header_style() {
 	<style type="text/css">
 	<?php
 		// Has the text been hidden?
-		if ( ! display_header_text() ) :
+		if ( 'blank' == $header_text_color ) :
 	?>
 		.site-title,
 		.site-description {
@@ -75,15 +61,15 @@ function Undergrad_header_style() {
 	</style>
 	<?php
 }
-endif; // Undergrad_header_style
+endif; // undergrad_header_style
 
-if ( ! function_exists( 'Undergrad_admin_header_style' ) ) :
+if ( ! function_exists( 'undergrad_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see Undergrad_custom_header_setup().
+ * @see undergrad_custom_header_setup().
  */
-function Undergrad_admin_header_style() {
+function undergrad_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -103,15 +89,15 @@ function Undergrad_admin_header_style() {
 	</style>
 <?php
 }
-endif; // Undergrad_admin_header_style
+endif; // undergrad_admin_header_style
 
-if ( ! function_exists( 'Undergrad_admin_header_image' ) ) :
+if ( ! function_exists( 'undergrad_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see Undergrad_custom_header_setup().
+ * @see undergrad_custom_header_setup().
  */
-function Undergrad_admin_header_image() {
+function undergrad_admin_header_image() {
 ?>
 	<div id="headimg">
 		<h1 class="displaying-header-text">
@@ -124,4 +110,4 @@ function Undergrad_admin_header_image() {
 	</div>
 <?php
 }
-endif; // Undergrad_admin_header_image
+endif; // undergrad_admin_header_image

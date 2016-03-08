@@ -1,0 +1,12 @@
+.site-content .widget-area {
+  overflow: hidden;
+  width: $size__site-sidebar;
+  padding: 0 1.5em;
+  background-color: $color__background-sidebar;
+      position: absolute;
+      right:0;
+}
+.site-content .content-area {
+  width: $size__site-sidebar-cutout;
+  float: left;
+}

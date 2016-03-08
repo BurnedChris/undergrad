@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+.site-header {
+  width: $size__site-sidebar-cutout;
+  float: left;
+  background-color: $color__acent;
+  .site-branding {
+    .site-title {
+      margin: 1.7em 1em 0;
+      font-family: $font__family-Fira-Sans, sans-serif;
+      font-size: $font__size-h2;
+      font-weight: $font__weight-bold;
+      line-height: 1.3em;
+      text-transform: uppercase;
+      word-break: break-word;
+      text-align: center;
+      a,
+      a:visited {
+        color: $color__header-font-color;
+        text-decoration: none;
+      }
+       ::after {
+        display: block;
+        content: "";
+        margin: 0.3em auto 0;
+        width: 3em;
+        border-bottom: solid 1px #fff;
+        opacity: 0.5;
+      }
+    }
+    .site-description {
+      font-family: $font__family-Fira-Sans, sans-serif;
+      font-size: $font__size-h5;
+      font-weight: $font__weight-default;
+      text-align: center;
+      color: $color__header-font-color;
+    }
+  }
+}
